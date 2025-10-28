@@ -4,22 +4,10 @@ public class Medico {
 
   
     private String nome;
-    private boolean disponivel;
 
     // Construtor 
     public Medico(String nome) {
         setNome(nome);        
-        this.disponivel = true; 
-    }
-
-    // Ocupa o médico 
-    public void ocupar() {
-        disponivel = false;
-    }
-
-    // Libera o médico 
-    public void liberar() {
-        disponivel = true;
     }
 
     // Getts e Setts 
@@ -27,9 +15,6 @@ public class Medico {
         return nome;
     }
 
-    public boolean isDisponivel() {
-        return disponivel;
-    }
 
     public void setNome(String nome) {
      
@@ -40,7 +25,4 @@ public class Medico {
         }
     }
 
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
-    }
 }
