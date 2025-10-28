@@ -3,51 +3,51 @@ title Sistema de Atendimento Médico - Diagrama de Classes
 ' ===== CLASSES =====
 
 class Paciente { 
-  - Nome : String
-  - Prioridade : Int
-  - Médico da Consulta : String
-  - Horário Entrada : LocalDateTime 
-  - Horário Atendimento : LocalDateTime 
-  + Paciente()
-  + Mostrar Informação()
-  + Registrar Horario Consulta()
-  + Get Prioridade Descrição()
-  + Get Name () : String
-  + Get Prioridade ()
-  + Get Horario Entrada ()
-  + Get Medico Atendente ()
-  + Get Horario Entrada Formatado()
-  + Get Horario Consulta Formatado()
-  + Set Nome()
+  private - Nome : String 
+  private - Prioridade : Int
+  private - Médico da Consulta : String
+  private - Horário Entrada : LocalDateTime 
+  private - Horário Atendimento : LocalDateTime 
+  public  + Paciente()
+  public  + Mostrar Informação()
+  public  + Registrar Horario Consulta()
+  public  + Get Prioridade Descrição()
+  public  + Get Name () : String
+  public  + Get Prioridade ()
+  public  + Get Horario Entrada ()
+  public  + Get Medico Atendente ()
+  public  + Get Horario Entrada Formatado()
+  public  + Get Horario Consulta Formatado()
+  public  + Set Nome()
 }
 
 class Medico {
-  - Nome : String
-  + Médico()
-  + Get Name ()
-  + Set Nome()
+ private - Nome : String
+ public  + Médico()
+ public  + Get Name ()
+ public  + Set Nome()
 }
 
 class Atendimento {
-  - Pacientes : Array
-  - Total de Pacientes : Int
-  - Médicos List : Array
-  - Histórico Fila List : Array 
-  - Índice dos Médicos : Int
-  + Main()
-  - Mostrar Menu()
-  - Ler Opção Menu()
-  - Cadastrar Medicos Iniciais()
-  - Inserir Paciente()
-  - Perguntar Prioridade()
-  - Mostrar Fila por Prioridade()
-  - Pegar Próximo Paciente()
-  - Remover Paciente()
-  - Atender Próximo Paciente()
-  - Mostrar Histórico da Fila()
-  - horarioChegadaPaciente : LocalDateTime
-  - horarioInicioAtendimento : LocalDateTime
-  - horarioFimAtendimento : LocalDateTime
+ private  - Pacientes : Array
+ private  - Total de Pacientes : Int
+ private  - Médicos List : Array
+ private  - Histórico Fila List : Array 
+ private  - Índice dos Médicos : Int
+ public  + Main()
+ private  - Mostrar Menu()
+ private  - Ler Opção Menu()
+ private  - Cadastrar Medicos Iniciais()
+ private  - Inserir Paciente()
+ private  - Perguntar Prioridade()
+ private  - Mostrar Fila por Prioridade()
+ private  - Pegar Próximo Paciente()
+ private  - Remover Paciente()
+ private  - Atender Próximo Paciente()
+ private  - Mostrar Histórico da Fila()
+ private  - horarioChegadaPaciente : LocalDateTime
+ private  - horarioInicioAtendimento : LocalDateTime
+ private  - horarioFimAtendimento : LocalDateTime
 }
 
 ' ===== RELACIONAMENTOS =====
